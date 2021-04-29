@@ -15,8 +15,12 @@ public class App {
         System.out.println("Starting Depth First Search (DFS) from vertex 2");
         graph.performDFS(2);
 
+        graph.clearVisitedSet();
+
         System.out.println();
         System.out.println("Starting Breadth First Search (BFS) from vertex 2");
         graph.performBFS(2);
+
+        graph.clearVisitedSet();
     }
 }

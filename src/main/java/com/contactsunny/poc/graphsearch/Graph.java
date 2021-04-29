@@ -77,8 +77,6 @@ public class Graph {
      * @param value the ID of the vertex from where the search has to start.
      */
     public void performBFS(int value) {
-        // Clearing the visited set as it is already populated by DFS.
-        visited = new HashSet<Integer>();
         // Creating a queue for storing adjacent vertices.
         Queue<Vertex> queue = new LinkedList<Vertex>();
 
@@ -106,5 +104,13 @@ public class Graph {
                 }
             }
         }
+    }
+
+    /**
+     * Method to clear the visited set so that if you run DFS or BFS back-to-back, it won't fail.
+     */
+    public void clearVisitedSet() {
+        // Clearing the visited set as it is already populated by DFS.
+        visited = new HashSet<Integer>();
     }
 }
