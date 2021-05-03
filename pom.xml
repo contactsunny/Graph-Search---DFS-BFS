@@ -22,7 +22,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <!-- This is main class of your program which will be executed-->
-                            <mainClass>com.contactsunny.poc.com.contactsunny.poc.graphsearch.App</mainClass>
+                            <mainClass>com.contactsunny.poc.graphsearch.App</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
